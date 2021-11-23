@@ -1,3 +1,11 @@
+<script>
+  $(document).ready(function() {
+    $("#myPhoto").hide();
+    $("#target").click(function(){
+    $("#myPhoto").toggle();
+    });
+  });
+</script>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
   .text{
@@ -21,8 +29,8 @@
 <main>
   <p class="text">Jennifer</p>
 
-  <img class="smaller-image" src="https://img.onl/hr7Hjj" alt="my photo.">
-
+  <img id="myPhoto" class="smaller-image" src="https://img.onl/hr7Hjj" alt="my photo.">
+  <button class="btn btn-default target" id="target">Click</button>
   <p class="text">Contact:</p>
   <ul>
     <li class="text"><a href="https://www.instagram.com/jennifer90114/">Instagram</a></li>
